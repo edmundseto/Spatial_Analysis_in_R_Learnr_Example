@@ -1,0 +1,120 @@
+---
+title: "Introduction to R"
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+description: >
+  Module 1 within a course on Spatial Analysis in R.
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = TRUE)
+tutorial_options(exercise.timelimit = 180)   # secs, I added this to allow for long download/rendering times for spatial data/maps
+```
+
+## Module 1. Introduction to R
+
+**Author**
+
+Edmund Seto  
+Associate Professor  
+Department of Environmental & Occupational Health Sciences  
+University of Washington  
+eseto@uw.edu
+
+This is Module 1 within a [course on Spatial Analysis in R](https://www.edmundseto.com/edmundseto/introduction-to-spatial-analysis-for-r-a-focus-on-environmental-health/).
+
+
+## First time using R?
+
+If you're experienced with R, then you can skip to the next module by selecting Module 2 on the menu.
+
+If you're new to R, please continue this module.
+
+## What is R?  
+
+R is a freely available programming language for data science. It combines statistics and graphics capabilities that are often used for analyzing and visualizing data.
+
+One of the strengths of the R language is that it is open source.
+
+Another strength of the language is that it has a large user community that contributes add-on packages that extend the capabilities of R.
+
+## Can we perform spatial analyses in R?  
+
+Yes! With the available add-on packages, R is a useful language for working with spatial data.
+
+This tutorial, **Introduction Spatial Analysis in R** will cover the use of some of spatial packages for R.
+
+If you learn best by looking at example code and seeing the results of the code, then you can continue to Module 2 of this tutorial. The tutorial will present chunks of code that you can use in your own projects. We'll do our best to explain the code and the results it produces.  
+
+In some cases, a module will have an exercise that asks you to edit code and try to run it directly on the website to see the results. Not all code chunks will need to be run -- the runnable chunks of code are mainly the exercises in each module.
+
+For example, here are some examples of R code.  Press the "Run Code" button to run the code and see it produce results.
+
+```{r module1_r_example, exercise=TRUE, exercise.lines = 19}
+# comments start with the 'pound' sign
+
+# below we add two numbers
+2+5
+# below we compute the square root of 64. Notice that sqrt is a 'function' in R.
+sqrt(64)
+# below we assign the variable a the value 8...
+#   and the variable b the value 4...
+#   and we use them in a calculation.
+a <- 8
+b <- 4
+a+(2*b)
+# what's the value of a?
+a
+# below are some ways we can work with text.  Notice what the paste function does.
+c <- "This is"
+d <- "a smart class."
+paste(c, d)
+```
+
+## Results of running the code
+
+You should see a result above for lines of code that compute a result.  Did the results of running the code match your expectations?
+
+Throughout this course, when you see an exercise with a run button, you can run the code as is, or you can change the code and re-run it.  Try changing the line "2+5" to another calculation like "20+50", and re-run it.  You should see the results change accordingly.
+
+## Help on R functions
+
+In the previous code, we used two R functions: sqrt() and paste().  As we progress through this course, you may need to use R's help functionality to learn how a function works and the options available for a function.
+
+To get help on any R functions you type a question mark followed by the name of the function.  Try this out below by running the code.
+
+You can also try changing the code below to get help on the paste function, and re-running the code.
+
+```{r module1_r_example2, exercise=TRUE, exercise.lines = 2}
+?sqrt
+```
+
+## Next steps
+
+If you're new to R, and you think it'd be helpful to learn some of the fundamental aspects of the R language, you can follow one of the many online tutorials.  Below is a link to a tutorial. I recommend going through 3 of their chapters:
+
+**Chapter 1 (Getting Started with R)**
+
+- How to install R and RStudio  
+- R programming basics  
+- How to use packages  
+
+**Chapter 2 (Data visualization)** 
+
+- How to use *ggplot2* package 
+
+**Chapter 3 (Data wrangling)** 
+
+- How to use *dplyr* package 
+
+Here is the link to the tutorial: https://moderndive.netlify.app/1-getting-started.html
+
+When you are finished with the tutorial, you can return here to learn more about the spatial packages.
+
+## Course website
+
+Return to the main page for the [course on Spatial Analysis in R](https://www.edmundseto.com/edmundseto/introduction-to-spatial-analysis-for-r-a-focus-on-environmental-health/).
